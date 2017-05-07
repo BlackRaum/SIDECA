@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
+            this.SuspendLayout();
+            // 
+            // Inicio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1024, 729);
+            this.Name = "Inicio";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

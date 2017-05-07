@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SIDECA
 {
-    public partial class Form1 : Form
+    public partial class UsuarioForm : Form
     {
-        public Form1()
+        public UsuarioForm()
         {
             InitializeComponent();
+        }
+
+        private void menuStrip1_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }
