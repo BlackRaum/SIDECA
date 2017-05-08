@@ -2,7 +2,6 @@
 
 namespace ClassLibrary2.Domain
 {
-
     public class Denuncia
     {
         private String numeroExpediente;
@@ -12,6 +11,7 @@ namespace ClassLibrary2.Domain
 
         public Denuncia()
         {
+            this.nino = new Nino();
         }
 
         public string NumeroExpediente { get => numeroExpediente; set => numeroExpediente = value; }

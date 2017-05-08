@@ -2,7 +2,6 @@
 
 namespace ClassLibrary2.Domain
 {
-
     public class Departamento
     {
         private int codigoDepartamento;
@@ -14,6 +13,7 @@ namespace ClassLibrary2.Domain
 
         public Departamento()
         {
+            this.oficina = new Oficina();
         }
 
         public int CodigoDepartamento { get => codigoDepartamento; set => codigoDepartamento = value; }

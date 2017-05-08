@@ -7,11 +7,11 @@ using System.Text;
 namespace Library.Data
 {
 
-    public class DenunciasData
+    public class DenunciaData
     {
         private string stringConexion;
 
-        public DenunciasData(string stringConexion)
+        public DenunciaData(string stringConexion)
         {
             this.stringConexion = stringConexion;
         }
@@ -35,7 +35,7 @@ namespace Library.Data
             cmdInsertarDenunciaNino.CommandType = System.Data.CommandType.StoredProcedure;
 
             //Agregamos los parámetros
-            cmdInsertarDenunciaNino.Parameters.Add(new SqlParameter("@cedula_nino", denuncia.Nino.CedulaNiño));
+            cmdInsertarDenunciaNino.Parameters.Add(new SqlParameter("@cedula_nino", denuncia.Nino.CedulaNino));
             cmdInsertarDenunciaNino.Parameters.Add(new SqlParameter("@numero_expediente", denuncia.NumeroExpediente));
 
             conexion.Open();
