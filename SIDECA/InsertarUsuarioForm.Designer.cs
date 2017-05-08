@@ -42,6 +42,8 @@
             this.lbInsertarUsuario = new System.Windows.Forms.Label();
             this.tbNombreUsuario = new System.Windows.Forms.TextBox();
             this.tbContrasena = new System.Windows.Forms.TextBox();
+            this.lbNombre = new System.Windows.Forms.Label();
+            this.lbContrasena = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,6 +180,7 @@
             this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tbNombreUsuario.Location = new System.Drawing.Point(358, 133);
+            this.tbNombreUsuario.MaxLength = 15;
             this.tbNombreUsuario.Name = "tbNombreUsuario";
             this.tbNombreUsuario.Size = new System.Drawing.Size(272, 29);
             this.tbNombreUsuario.TabIndex = 3;
@@ -190,12 +193,40 @@
             this.tbContrasena.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbContrasena.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tbContrasena.Location = new System.Drawing.Point(358, 197);
+            this.tbContrasena.MaxLength = 12;
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbContrasena.Size = new System.Drawing.Size(272, 29);
             this.tbContrasena.TabIndex = 4;
             this.tbContrasena.Text = "Contraseña";
             this.tbContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbContrasena.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbContrasena_KeyPress);
+            // 
+            // lbNombre
+            // 
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbNombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.ForeColor = System.Drawing.Color.Red;
+            this.lbNombre.Location = new System.Drawing.Point(649, 133);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(280, 19);
+            this.lbNombre.TabIndex = 5;
+            this.lbNombre.Text = "*Ingrese un nombre de usuario valido";
+            this.lbNombre.Visible = false;
+            // 
+            // lbContrasena
+            // 
+            this.lbContrasena.AutoSize = true;
+            this.lbContrasena.BackColor = System.Drawing.Color.Transparent;
+            this.lbContrasena.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContrasena.ForeColor = System.Drawing.Color.Red;
+            this.lbContrasena.Location = new System.Drawing.Point(649, 197);
+            this.lbContrasena.Name = "lbContrasena";
+            this.lbContrasena.Size = new System.Drawing.Size(308, 19);
+            this.lbContrasena.TabIndex = 6;
+            this.lbContrasena.Text = "*Ingrese una contraseña de usuario valida";
+            this.lbContrasena.Visible = false;
             // 
             // InsertarUsuarioForm
             // 
@@ -203,6 +234,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.lbContrasena);
+            this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.tbContrasena);
             this.Controls.Add(this.tbNombreUsuario);
             this.Controls.Add(this.lbInsertarUsuario);
@@ -234,5 +267,7 @@
         private System.Windows.Forms.Label lbInsertarUsuario;
         private System.Windows.Forms.TextBox tbNombreUsuario;
         private System.Windows.Forms.TextBox tbContrasena;
+        private System.Windows.Forms.Label lbNombre;
+        private System.Windows.Forms.Label lbContrasena;
     }
 }

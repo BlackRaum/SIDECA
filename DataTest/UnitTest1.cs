@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Library.Data;
+using ClassLibrary2.Domain;
 
 namespace DataTest
 {
