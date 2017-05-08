@@ -1,21 +1,24 @@
 ﻿using System;
 
-public class Departamento
+namespace ClassLibrary2.Domain
 {
-    private int codigoDepartamento;
-    private String nombreDepartamento;
-    private String telefono;
-    private String fax;
-    private String correo;
-    private Oficina oficina;
-    
-	public Departamento()
-	{
-	}
+    public class Departamento
+    {
+        private int codigoDepartamento;
+        private String nombreDepartamento;
+        private String telefono;
+        private String fax;
+        private String correo;
+        private Oficina oficina;
 
-    public int CodigoDepartamento { get => codigoDepartamento; set => codigoDepartamento = value; }
-    public string Telefono { get => telefono; set => telefono = value; }
-    public string Fax { get => fax; set => fax = value; }
-    public string Correo { get => correo; set => correo = value; }
-    public Oficina Oficina { get => oficina; set => oficina = value; }
+        public Departamento()
+        {
+        }
+
+        public int CodigoDepartamento { get => codigoDepartamento; set => codigoDepartamento = value; }
+        public string Telefono { get => telefono; set => telefono = value; }
+        public string Fax { get => fax; set => fax = value; }
+        public string Correo { get => correo; set => correo = value; }
+        public Oficina Oficina { get => oficina; set => oficina = value; }
+    }
 }
