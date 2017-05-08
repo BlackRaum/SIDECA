@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class UsuarioForm
+    partial class InsertarUsuarioForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertarUsuarioForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.denunciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.casosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +38,10 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btInsertar = new System.Windows.Forms.Button();
+            this.lbInsertarUsuario = new System.Windows.Forms.Label();
+            this.tbNombreUsuario = new System.Windows.Forms.TextBox();
+            this.tbContrasena = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,20 +143,79 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // UsuarioForm
+            // btInsertar
+            // 
+            this.btInsertar.BackColor = System.Drawing.Color.Lime;
+            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btInsertar.FlatAppearance.BorderSize = 0;
+            this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
+            this.btInsertar.Location = new System.Drawing.Point(411, 327);
+            this.btInsertar.Name = "btInsertar";
+            this.btInsertar.Size = new System.Drawing.Size(150, 40);
+            this.btInsertar.TabIndex = 1;
+            this.btInsertar.Text = "Insertar";
+            this.btInsertar.UseVisualStyleBackColor = false;
+            this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
+            // 
+            // lbInsertarUsuario
+            // 
+            this.lbInsertarUsuario.AutoSize = true;
+            this.lbInsertarUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lbInsertarUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbInsertarUsuario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInsertarUsuario.ForeColor = System.Drawing.Color.White;
+            this.lbInsertarUsuario.Location = new System.Drawing.Point(351, 71);
+            this.lbInsertarUsuario.Name = "lbInsertarUsuario";
+            this.lbInsertarUsuario.Size = new System.Drawing.Size(279, 39);
+            this.lbInsertarUsuario.TabIndex = 2;
+            this.lbInsertarUsuario.Text = "Insertar Usuario";
+            // 
+            // tbNombreUsuario
+            // 
+            this.tbNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbNombreUsuario.Location = new System.Drawing.Point(358, 133);
+            this.tbNombreUsuario.Name = "tbNombreUsuario";
+            this.tbNombreUsuario.Size = new System.Drawing.Size(272, 29);
+            this.tbNombreUsuario.TabIndex = 3;
+            this.tbNombreUsuario.Text = "Nombre de Usuario";
+            this.tbNombreUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbContrasena
+            // 
+            this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbContrasena.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContrasena.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbContrasena.Location = new System.Drawing.Point(358, 197);
+            this.tbContrasena.Name = "tbContrasena";
+            this.tbContrasena.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tbContrasena.Size = new System.Drawing.Size(272, 29);
+            this.tbContrasena.TabIndex = 4;
+            this.tbContrasena.Text = "Contraseña";
+            this.tbContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // InsertarUsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.tbContrasena);
+            this.Controls.Add(this.tbNombreUsuario);
+            this.Controls.Add(this.lbInsertarUsuario);
+            this.Controls.Add(this.btInsertar);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "UsuarioForm";
+            this.Name = "InsertarUsuarioForm";
             this.Text = "SIDECA";
-            this.Load += new System.EventHandler(this.UsuarioForm_Load);
+            this.Load += new System.EventHandler(this.InsertarUsuarioForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,5 +230,9 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.Button btInsertar;
+        private System.Windows.Forms.Label lbInsertarUsuario;
+        private System.Windows.Forms.TextBox tbNombreUsuario;
+        private System.Windows.Forms.TextBox tbContrasena;
     }
 }

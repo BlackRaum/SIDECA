@@ -2,8 +2,8 @@
 
 public class Usuario
 {
-    private String nombreUsuario;
-    private String contrasena;
+    private string nombreUsuario;
+    private string contrasena;
 
 	public Usuario()
 	{

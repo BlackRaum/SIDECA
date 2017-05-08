@@ -7,7 +7,7 @@ public class Profesional
     private String especialidad;
     private String telefonoCelular;
     private String correo;
-    private Departamento
+    private Departamento departamento;
     
 	public Profesional()
 	{
@@ -18,4 +18,5 @@ public class Profesional
     public string Especialidad { get => especialidad; set => especialidad = value; }
     public string TelefonoCelular { get => telefonoCelular; set => telefonoCelular = value; }
     public string Correo { get => correo; set => correo = value; }
+    public Departamento Departamento { get => departamento; set => departamento = value; }
 }

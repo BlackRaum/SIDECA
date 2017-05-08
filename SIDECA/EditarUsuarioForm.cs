@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIDECA
 {
-    public partial class UsuarioForm : Form
+    public partial class EditarUsuarioForm : Form
     {
-        public UsuarioForm()
+        public EditarUsuarioForm()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace SIDECA
 
         }
 
-        private void UsuarioForm_Load(object sender, EventArgs e)
+        private void EditarUsuarioForm_Load(object sender, EventArgs e)
         {
 
         }

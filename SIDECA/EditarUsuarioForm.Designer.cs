@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class UsuarioForm
+    partial class EditarUsuarioForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarUsuarioForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.denunciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.casosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -139,7 +139,7 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // UsuarioForm
+            // EditarUsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,9 +147,9 @@
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "UsuarioForm";
+            this.Name = "EditarUsuarioForm";
             this.Text = "SIDECA";
-            this.Load += new System.EventHandler(this.UsuarioForm_Load);
+            this.Load += new System.EventHandler(this.EditarUsuarioForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

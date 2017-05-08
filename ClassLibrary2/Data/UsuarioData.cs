@@ -89,7 +89,7 @@ namespace Library.Data
 
             //Agregar los demas parametros restantes
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@usuario", usuario.NombreUsuario));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@contraseña", usuario.Contrasena));
+            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@contrasena", usuario.Contrasena));
             try
             {
                 conexion.Open();
