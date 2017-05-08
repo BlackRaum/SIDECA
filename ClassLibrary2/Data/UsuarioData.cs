@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary2.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
