@@ -2,6 +2,7 @@
 
 namespace ClassLibrary2.Domain
 {
+
     public class Nino
     {
         private int cedulaNino;

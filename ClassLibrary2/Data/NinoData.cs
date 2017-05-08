@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary2.Data
 {
+
     public class NinoData
     {
         private string stringConexion;

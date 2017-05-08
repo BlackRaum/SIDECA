@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Library.Data
 {
+
     public class DenunciasData
     {
         private string stringConexion;

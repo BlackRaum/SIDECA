@@ -2,6 +2,7 @@
 
 namespace ClassLibrary2.Domain
 {
+
     public class Profesional
     {
         private int cedula;
