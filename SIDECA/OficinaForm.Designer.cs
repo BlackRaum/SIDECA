@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class EditarUsuarioForm
+    partial class OficinaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,13 +37,9 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbTituloUsuario = new System.Windows.Forms.Label();
-            this.lbNombreUsuario = new System.Windows.Forms.Label();
-            this.lbContrasena = new System.Windows.Forms.Label();
-            this.tbNombreUsuario = new System.Windows.Forms.TextBox();
-            this.tbContrasena = new System.Windows.Forms.TextBox();
-            this.btContinuar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btInsertar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,124 +141,74 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // lbTituloUsuario
+            // btInsertar
             // 
-            this.lbTituloUsuario.AutoSize = true;
-            this.lbTituloUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lbTituloUsuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbTituloUsuario.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTituloUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbTituloUsuario.Location = new System.Drawing.Point(570, 103);
-            this.lbTituloUsuario.Name = "lbTituloUsuario";
-            this.lbTituloUsuario.Size = new System.Drawing.Size(208, 33);
-            this.lbTituloUsuario.TabIndex = 5;
-            this.lbTituloUsuario.Text = "Editar Usuario";
+            this.btInsertar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btInsertar.FlatAppearance.BorderSize = 0;
+            this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
+            this.btInsertar.Location = new System.Drawing.Point(363, 268);
+            this.btInsertar.Name = "btInsertar";
+            this.btInsertar.Size = new System.Drawing.Size(150, 40);
+            this.btInsertar.TabIndex = 2;
+            this.btInsertar.Text = "Ingresar";
+            this.btInsertar.UseVisualStyleBackColor = false;
+            this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
             // 
-            // lbNombreUsuario
+            // button1
             // 
-            this.lbNombreUsuario.AutoSize = true;
-            this.lbNombreUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lbNombreUsuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombreUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbNombreUsuario.Location = new System.Drawing.Point(391, 186);
-            this.lbNombreUsuario.Name = "lbNombreUsuario";
-            this.lbNombreUsuario.Size = new System.Drawing.Size(169, 27);
-            this.lbNombreUsuario.TabIndex = 6;
-            this.lbNombreUsuario.Text = "Nombre Usuario";
-            this.lbNombreUsuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(599, 268);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 40);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lbContrasena
+            // button2
             // 
-            this.lbContrasena.AutoSize = true;
-            this.lbContrasena.BackColor = System.Drawing.Color.Transparent;
-            this.lbContrasena.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbContrasena.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContrasena.ForeColor = System.Drawing.Color.White;
-            this.lbContrasena.Location = new System.Drawing.Point(438, 255);
-            this.lbContrasena.Name = "lbContrasena";
-            this.lbContrasena.Size = new System.Drawing.Size(122, 27);
-            this.lbContrasena.TabIndex = 7;
-            this.lbContrasena.Text = "Contraseña";
-            this.lbContrasena.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(824, 268);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 40);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Borrar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tbNombreUsuario
-            // 
-            this.tbNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbNombreUsuario.Enabled = false;
-            this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbNombreUsuario.Location = new System.Drawing.Point(576, 183);
-            this.tbNombreUsuario.MaxLength = 15;
-            this.tbNombreUsuario.Name = "tbNombreUsuario";
-            this.tbNombreUsuario.Size = new System.Drawing.Size(221, 29);
-            this.tbNombreUsuario.TabIndex = 9;
-            this.tbNombreUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbContrasena
-            // 
-            this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbContrasena.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContrasena.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbContrasena.Location = new System.Drawing.Point(576, 252);
-            this.tbContrasena.MaxLength = 15;
-            this.tbContrasena.Name = "tbContrasena";
-            this.tbContrasena.Size = new System.Drawing.Size(221, 29);
-            this.tbContrasena.TabIndex = 10;
-            this.tbContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btContinuar
-            // 
-            this.btContinuar.BackColor = System.Drawing.Color.LimeGreen;
-            this.btContinuar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btContinuar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.btContinuar.FlatAppearance.BorderSize = 0;
-            this.btContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btContinuar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btContinuar.ForeColor = System.Drawing.Color.Transparent;
-            this.btContinuar.Location = new System.Drawing.Point(611, 357);
-            this.btContinuar.Name = "btContinuar";
-            this.btContinuar.Size = new System.Drawing.Size(150, 40);
-            this.btContinuar.TabIndex = 11;
-            this.btContinuar.Text = "Editar";
-            this.btContinuar.UseVisualStyleBackColor = false;
-            this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(572, 294);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 19);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "*Ingrese una contraseña de usuario valida";
-            this.label1.Visible = false;
-            // 
-            // EditarUsuarioForm
+            // OficinaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SIDECA.Properties.Resources.fondoPrincipal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btContinuar);
-            this.Controls.Add(this.tbContrasena);
-            this.Controls.Add(this.tbNombreUsuario);
-            this.Controls.Add(this.lbContrasena);
-            this.Controls.Add(this.lbNombreUsuario);
-            this.Controls.Add(this.lbTituloUsuario);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btInsertar);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "EditarUsuarioForm";
+            this.Name = "OficinaForm";
             this.Text = "SIDECA";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -277,12 +223,8 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.Label lbTituloUsuario;
-        private System.Windows.Forms.Label lbNombreUsuario;
-        private System.Windows.Forms.Label lbContrasena;
-        private System.Windows.Forms.TextBox tbNombreUsuario;
-        private System.Windows.Forms.TextBox tbContrasena;
-        private System.Windows.Forms.Button btContinuar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btInsertar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

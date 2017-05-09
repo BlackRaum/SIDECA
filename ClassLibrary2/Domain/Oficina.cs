@@ -23,5 +23,6 @@ namespace ClassLibrary2.Domain
         public string Telefono { get => telefono; set => telefono = value; }
         public string Fax { get => fax; set => fax = value; }
         public string Correo { get => correo; set => correo = value; }
+        public string Ubicacion { get => provincia + ", " + canton + ", " + distrito; }
     }
 }

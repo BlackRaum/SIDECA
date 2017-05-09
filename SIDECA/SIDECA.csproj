@@ -45,11 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarOficinaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarOficinaForm.Designer.cs">
+      <DependentUpon>BuscarOficinaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarUsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuscarUsuarioForm.Designer.cs">
       <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarOficinaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarOficinaForm.Designer.cs">
+      <DependentUpon>EditarOficinaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ExitoErrorForm.cs">
       <SubType>Form</SubType>
@@ -69,11 +81,11 @@
     <Compile Include="EditarUsuarioForm.Designer.cs">
       <DependentUpon>EditarUsuarioForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OficinasForm.cs">
+    <Compile Include="InsertarOficinaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OficinasForm.Designer.cs">
-      <DependentUpon>OficinasForm.cs</DependentUpon>
+    <Compile Include="InsertarOficinaForm.Designer.cs">
+      <DependentUpon>InsertarOficinaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,14 +95,26 @@
     <Compile Include="InsertarUsuarioForm.Designer.cs">
       <DependentUpon>InsertarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OficinaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaForm.Designer.cs">
+      <DependentUpon>OficinaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UsuarioForm.Designer.cs">
       <DependentUpon>UsuarioForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuscarOficinaForm.resx">
+      <DependentUpon>BuscarOficinaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarUsuarioForm.resx">
       <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarOficinaForm.resx">
+      <DependentUpon>EditarOficinaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitoErrorForm.resx">
       <DependentUpon>ExitoErrorForm.cs</DependentUpon>
@@ -100,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarUsuarioForm.resx">
       <DependentUpon>EditarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarOficinaForm.resx">
+      <DependentUpon>InsertarOficinaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="InsertarUsuarioForm.resx">
       <DependentUpon>InsertarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaForm.resx">
+      <DependentUpon>OficinaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioForm.resx">
       <DependentUpon>UsuarioForm.cs</DependentUpon>

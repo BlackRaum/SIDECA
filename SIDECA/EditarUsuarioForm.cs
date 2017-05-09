@@ -41,10 +41,18 @@ namespace SIDECA
 
         private void btContinuar_Click(object sender, EventArgs e)
         {
-            usuario.NombreUsuario = tbNombreUsuario.Text;
-            usuario.Contrasena = tbContrasena.Text;
 
-            usuarioBusiness.ActualizarUsuario(usuario);
+          
+            if (tbContrasena.Text != null)
+            {
+                usuario.Contrasena = tbContrasena.Text;
+                usuarioBusiness.InsertarUsuario(usuario);
+            }
+            else
+            {
+                lbContrasena.Visible = true;
+            }                        
+            
         }
     }
 }

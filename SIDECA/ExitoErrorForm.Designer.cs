@@ -151,7 +151,6 @@
             this.lbMensaje.Name = "lbMensaje";
             this.lbMensaje.Size = new System.Drawing.Size(0, 39);
             this.lbMensaje.TabIndex = 3;
-            
             // 
             // btContinuar
             // 
@@ -168,6 +167,7 @@
             this.btContinuar.TabIndex = 8;
             this.btContinuar.Text = "Continuar";
             this.btContinuar.UseVisualStyleBackColor = false;
+            this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
             // 
             // ExitoErrorForm
             // 

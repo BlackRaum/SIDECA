@@ -43,10 +43,12 @@
     <Compile Include="Business\CasoBusiness.cs" />
     <Compile Include="Business\DenunciaBusiness.cs" />
     <Compile Include="Business\NinoBusiness.cs" />
+    <Compile Include="Business\OficinaBusiness.cs" />
     <Compile Include="Business\UsuarioBusiness.cs" />
     <Compile Include="Data\CasoData.cs" />
     <Compile Include="Data\DenunciaData.cs" />
     <Compile Include="Data\NinoData.cs" />
+    <Compile Include="Data\OficinaData.cs" />
     <Compile Include="Data\UsuarioData.cs" />
     <Compile Include="Domain\Caso.cs" />
     <Compile Include="Domain\Denuncia.cs" />

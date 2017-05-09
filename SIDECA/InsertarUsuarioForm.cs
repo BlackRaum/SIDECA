@@ -15,6 +15,7 @@ namespace SIDECA
     public partial class InsertarUsuarioForm : Form
     {
         private UsuarioBusiness usuarioBusiness;
+        private string contenidoTextBox;
         public InsertarUsuarioForm()
         {
             InitializeComponent();
@@ -27,6 +28,20 @@ namespace SIDECA
         }
 
         private void InsertarUsuarioForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Leave(object sender, EventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            
+            if (tb.Text=="")
+            {
+                
+            }
+        }
+        private void tb_Enter(object sender, EventArgs e)
         {
 
         }
