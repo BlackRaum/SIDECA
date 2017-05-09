@@ -45,11 +45,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarDepartamento.Designer.cs">
+      <DependentUpon>ActualizarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarProfesional.Designer.cs">
+      <DependentUpon>ActualizarProfesional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarDepartamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarDepartamentoForm.Designer.cs">
+      <DependentUpon>BuscarDepartamentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarOficinaDepartamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarOficinaDepartamentoForm.Designer.cs">
+      <DependentUpon>BuscarOficinaDepartamentoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarOficinaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuscarOficinaForm.Designer.cs">
       <DependentUpon>BuscarOficinaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProfesionalEliminarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProfesionalEliminarForm.Designer.cs">
+      <DependentUpon>BuscarProfesionalEliminarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProfesionalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProfesionalForm.Designer.cs">
+      <DependentUpon>BuscarProfesionalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarUsuarioForm.cs">
       <SubType>Form</SubType>
@@ -57,11 +93,29 @@
     <Compile Include="BuscarUsuarioForm.Designer.cs">
       <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepartamentosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartamentosForm.Designer.cs">
+      <DependentUpon>DepartamentosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditarOficinaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditarOficinaForm.Designer.cs">
       <DependentUpon>EditarOficinaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarDepartamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarDepartamentoForm.Designer.cs">
+      <DependentUpon>EliminarDepartamentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProfesionalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarProfesionalForm.Designer.cs">
+      <DependentUpon>EliminarProfesionalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ExitoErrorForm.cs">
       <SubType>Form</SubType>
@@ -81,11 +135,29 @@
     <Compile Include="EditarUsuarioForm.Designer.cs">
       <DependentUpon>EditarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertarDepartamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarDepartamentoForm.Designer.cs">
+      <DependentUpon>InsertarDepartamentoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertarOficinaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InsertarOficinaForm.Designer.cs">
       <DependentUpon>InsertarOficinaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarProfesionalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarProfesionalForm.Designer.cs">
+      <DependentUpon>InsertarProfesionalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfesionalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesionalesForm.Designer.cs">
+      <DependentUpon>ProfesionalesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,20 +173,59 @@
     <Compile Include="OficinaForm.Designer.cs">
       <DependentUpon>OficinaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeleccionarProfesionalEliminarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarProfesionalEliminarForm.Designer.cs">
+      <DependentUpon>SeleccionarProfesionalEliminarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarProfesionalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarProfesionalForm.Designer.cs">
+      <DependentUpon>SeleccionarProfesionalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UsuarioForm.Designer.cs">
       <DependentUpon>UsuarioForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarDepartamento.resx">
+      <DependentUpon>ActualizarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarProfesional.resx">
+      <DependentUpon>ActualizarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarDepartamentoForm.resx">
+      <DependentUpon>BuscarDepartamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarOficinaDepartamentoForm.resx">
+      <DependentUpon>BuscarOficinaDepartamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarOficinaForm.resx">
       <DependentUpon>BuscarOficinaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProfesionalEliminarForm.resx">
+      <DependentUpon>BuscarProfesionalEliminarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProfesionalForm.resx">
+      <DependentUpon>BuscarProfesionalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarUsuarioForm.resx">
       <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DepartamentosForm.resx">
+      <DependentUpon>DepartamentosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditarOficinaForm.resx">
       <DependentUpon>EditarOficinaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarDepartamentoForm.resx">
+      <DependentUpon>EliminarDepartamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProfesionalForm.resx">
+      <DependentUpon>EliminarProfesionalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitoErrorForm.resx">
       <DependentUpon>ExitoErrorForm.cs</DependentUpon>
@@ -125,8 +236,17 @@
     <EmbeddedResource Include="EditarUsuarioForm.resx">
       <DependentUpon>EditarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InsertarDepartamentoForm.resx">
+      <DependentUpon>InsertarDepartamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertarOficinaForm.resx">
       <DependentUpon>InsertarOficinaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarProfesionalForm.resx">
+      <DependentUpon>InsertarProfesionalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfesionalesForm.resx">
+      <DependentUpon>ProfesionalesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OficinaForm.resx">
       <DependentUpon>OficinaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarProfesionalEliminarForm.resx">
+      <DependentUpon>SeleccionarProfesionalEliminarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarProfesionalForm.resx">
+      <DependentUpon>SeleccionarProfesionalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioForm.resx">
       <DependentUpon>UsuarioForm.cs</DependentUpon>

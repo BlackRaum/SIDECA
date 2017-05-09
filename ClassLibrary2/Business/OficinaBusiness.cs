@@ -82,6 +82,11 @@ namespace ClassLibrary2.Business
 
         }
 
+        public LinkedList<Oficina> ObtenerOficinasTodas()
+        {
+            return oficinaData.ObtenerOficinasTodas();
+        }
+
     }
 }
 

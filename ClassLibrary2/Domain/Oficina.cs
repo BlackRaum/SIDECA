@@ -4,7 +4,7 @@ namespace ClassLibrary2.Domain
 {
     public class Oficina
     {
-        private String codigoOficina;
+        private int codigoOficina;
         private String provincia;
         private String canton;
         private String distrito;
@@ -16,7 +16,7 @@ namespace ClassLibrary2.Domain
         {
         }
 
-        public string CodigoOficina { get => codigoOficina; set => codigoOficina = value; }
+        public int CodigoOficina { get => codigoOficina; set => codigoOficina = value; }
         public string Provincia { get => provincia; set => provincia = value; }
         public string Canton { get => canton; set => canton = value; }
         public string Distrito { get => distrito; set => distrito = value; }

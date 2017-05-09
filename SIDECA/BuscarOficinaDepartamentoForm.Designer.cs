@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class BuscarOficinaForm
+    partial class BuscarOficinaDepartamentoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -153,10 +153,11 @@
             this.lbBuscarOficina.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbBuscarOficina.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBuscarOficina.ForeColor = System.Drawing.Color.White;
-            this.lbBuscarOficina.Location = new System.Drawing.Point(457, 76);
+            this.lbBuscarOficina.Location = new System.Drawing.Point(519, 118);
             this.lbBuscarOficina.Name = "lbBuscarOficina";
-            this.lbBuscarOficina.Size = new System.Drawing.Size(0, 39);
+            this.lbBuscarOficina.Size = new System.Drawing.Size(247, 39);
             this.lbBuscarOficina.TabIndex = 3;
+            this.lbBuscarOficina.Text = "Buscar Oficina";
             // 
             // lboOficina2
             // 
@@ -236,11 +237,12 @@
             this.btContinuar.Name = "btContinuar";
             this.btContinuar.Size = new System.Drawing.Size(150, 40);
             this.btContinuar.TabIndex = 10;
+            this.btContinuar.Text = "Continuar";
             this.btContinuar.UseVisualStyleBackColor = false;
             this.btContinuar.Visible = false;
             this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
             // 
-            // BuscarOficinaForm
+            // BuscarOficinaDepartamentoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,7 +259,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "BuscarOficinaForm";
+            this.Name = "BuscarOficinaDepartamentoForm";
             this.Text = "SIDECA";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

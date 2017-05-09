@@ -35,7 +35,7 @@ namespace ClassLibrary2.Data
                 while (dataReader.Read())
                 {
                     
-                    oficina.CodigoOficina = dataReader["codigo_oficina"].ToString();
+                    oficina.CodigoOficina = Int32.Parse(dataReader["codigo_oficina"].ToString());
                     oficina.Provincia = dataReader["provincia"].ToString();
                     oficina.Canton = dataReader["canton"].ToString();
                     oficina.Distrito = dataReader["distrito"].ToString();
@@ -56,6 +56,7 @@ namespace ClassLibrary2.Data
                 connection.Close();
             }
         }
+        /*sp_obtener_oficinas_all*/
         public LinkedList<Oficina> ObtenerOficinas(string ubicacion)
         {
             SqlConnection connection = new SqlConnection(stringConexion);
@@ -72,7 +73,7 @@ namespace ClassLibrary2.Data
                 while (dataReader.Read())
                 {
                     Oficina oficina = new Oficina();
-                    oficina.CodigoOficina = dataReader["codigo_oficina"].ToString();
+                    oficina.CodigoOficina = Int32.Parse(dataReader["codigo_oficina"].ToString());
                     oficina.Provincia = dataReader["provincia"].ToString();
                     oficina.Canton = dataReader["canton"].ToString();
                     oficina.Distrito = dataReader["distrito"].ToString();
@@ -96,7 +97,44 @@ namespace ClassLibrary2.Data
             }
         }
 
+        public LinkedList<Oficina> ObtenerOficinasTodas()
+        {
+            SqlConnection connection = new SqlConnection(stringConexion);
+            string sqlProcedureObtenerOficinas = "sp_obtener_oficinas_all";
+            SqlCommand comandoObtenerOficina = new SqlCommand(sqlProcedureObtenerOficinas, connection);
+            comandoObtenerOficina.CommandType = System.Data.CommandType.StoredProcedure;
+            
+            try
+            {
+                connection.Open();
+                SqlDataReader dataReader = comandoObtenerOficina.ExecuteReader();
+                LinkedList<Oficina> listaOficinas = new LinkedList<Oficina>();
+                while (dataReader.Read())
+                {
+                    Oficina oficina = new Oficina();
+                    oficina.CodigoOficina = Int32.Parse(dataReader["codigo_oficina"].ToString());
+                    oficina.Provincia = dataReader["provincia"].ToString();
+                    oficina.Canton = dataReader["canton"].ToString();
+                    oficina.Distrito = dataReader["distrito"].ToString();
+                    oficina.Telefono = dataReader["telefono"].ToString();
+                    oficina.Fax = dataReader["fax"].ToString();
+                    oficina.Correo = dataReader["correo"].ToString();
 
+
+                    listaOficinas.AddLast(oficina);
+                }
+                connection.Close();
+                return listaOficinas;
+            }
+            catch (SqlException exc)
+            {
+                throw exc;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         public void InsertarOficina(Oficina oficina)
         {
            
