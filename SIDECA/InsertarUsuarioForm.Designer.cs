@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertarUsuarioForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.denunciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.casosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -147,13 +146,13 @@
             // 
             // btInsertar
             // 
-            this.btInsertar.BackColor = System.Drawing.Color.Lime;
-            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btInsertar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
             this.btInsertar.FlatAppearance.BorderSize = 0;
             this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
-            this.btInsertar.Location = new System.Drawing.Point(411, 327);
+            this.btInsertar.Location = new System.Drawing.Point(540, 374);
             this.btInsertar.Name = "btInsertar";
             this.btInsertar.Size = new System.Drawing.Size(150, 40);
             this.btInsertar.TabIndex = 1;
@@ -168,7 +167,7 @@
             this.lbInsertarUsuario.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbInsertarUsuario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInsertarUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbInsertarUsuario.Location = new System.Drawing.Point(351, 71);
+            this.lbInsertarUsuario.Location = new System.Drawing.Point(480, 118);
             this.lbInsertarUsuario.Name = "lbInsertarUsuario";
             this.lbInsertarUsuario.Size = new System.Drawing.Size(279, 39);
             this.lbInsertarUsuario.TabIndex = 2;
@@ -179,7 +178,7 @@
             this.tbNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbNombreUsuario.Location = new System.Drawing.Point(358, 133);
+            this.tbNombreUsuario.Location = new System.Drawing.Point(487, 180);
             this.tbNombreUsuario.MaxLength = 15;
             this.tbNombreUsuario.Name = "tbNombreUsuario";
             this.tbNombreUsuario.Size = new System.Drawing.Size(272, 29);
@@ -192,7 +191,7 @@
             this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbContrasena.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbContrasena.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbContrasena.Location = new System.Drawing.Point(358, 197);
+            this.tbContrasena.Location = new System.Drawing.Point(487, 244);
             this.tbContrasena.MaxLength = 12;
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -208,7 +207,7 @@
             this.lbNombre.BackColor = System.Drawing.Color.Transparent;
             this.lbNombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.ForeColor = System.Drawing.Color.Red;
-            this.lbNombre.Location = new System.Drawing.Point(649, 133);
+            this.lbNombre.Location = new System.Drawing.Point(483, 212);
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(280, 19);
             this.lbNombre.TabIndex = 5;
@@ -221,7 +220,7 @@
             this.lbContrasena.BackColor = System.Drawing.Color.Transparent;
             this.lbContrasena.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbContrasena.ForeColor = System.Drawing.Color.Red;
-            this.lbContrasena.Location = new System.Drawing.Point(649, 197);
+            this.lbContrasena.Location = new System.Drawing.Point(483, 276);
             this.lbContrasena.Name = "lbContrasena";
             this.lbContrasena.Size = new System.Drawing.Size(308, 19);
             this.lbContrasena.TabIndex = 6;
@@ -232,7 +231,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::SIDECA.Properties.Resources.fondoPrincipal;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.lbContrasena);
             this.Controls.Add(this.lbNombre);

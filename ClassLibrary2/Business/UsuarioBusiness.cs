@@ -2,6 +2,7 @@
 using Library.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,34 +15,72 @@ namespace ClassLibrary2.Business
 
         public UsuarioBusiness(string conexion)
         {
+
             usuarioData = new UsuarioData(conexion);
         }
 
         public Usuario ObtenerUsuario(string nickName)
         {
-            return usuarioData.ObtenerUsuario(nickName);
+            try
+            {
+                return usuarioData.ObtenerUsuario(nickName);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            
         }
 
-        public LinkedList<Usuario> ObtenerUsuarios()
+        public LinkedList<Usuario> ObtenerUsuarios(string nickName)
         {
-            return usuarioData.ObtenerUsuarios();
+            try
+            {
+                return usuarioData.ObtenerUsuarios(nickName);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
         }
 
         public void InsertarUsuario(Usuario usuario)
         {
-            usuarioData.InsertarUsuario(usuario);
+            try
+            {
+                usuarioData.InsertarUsuario(usuario);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
 
         public void ActualizarUsuario(Usuario usuario)
         {
-            usuarioData.ActualizarUsuario(usuario);
+            try
+            {
+                usuarioData.ActualizarUsuario(usuario);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
 
         public void EliminarUsuario(string nickNameUsuario)
         {
-            usuarioData.EliminarUsuario(nickNameUsuario);
+            try
+            {
+                usuarioData.EliminarUsuario(nickNameUsuario);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+           
         }
-
 
     }
 }

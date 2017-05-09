@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class UsuarioForm
+    partial class ExitoErrorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,9 +37,8 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btInsertar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbMensaje = new System.Windows.Forms.Label();
+            this.btContinuar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,9 +65,8 @@
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 10, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(202, 729);
             this.menuStrip1.Stretch = false;
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.MouseHover += new System.EventHandler(this.menuStrip1_MouseHover);
             // 
             // denunciasToolStripMenuItem
             // 
@@ -90,6 +88,7 @@
             // 
             // oficinasToolStripMenuItem
             // 
+            this.oficinasToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oficinasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.oficinasToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.oficinasToolStripMenuItem.Name = "oficinasToolStripMenuItem";
@@ -141,75 +140,52 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // btInsertar
+            // lbMensaje
             // 
-            this.btInsertar.BackColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.FlatAppearance.BorderSize = 0;
-            this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
-            this.btInsertar.Location = new System.Drawing.Point(363, 268);
-            this.btInsertar.Name = "btInsertar";
-            this.btInsertar.Size = new System.Drawing.Size(150, 40);
-            this.btInsertar.TabIndex = 2;
-            this.btInsertar.Text = "Ingresar";
-            this.btInsertar.UseVisualStyleBackColor = false;
-            this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
+            this.lbMensaje.AutoSize = true;
+            this.lbMensaje.BackColor = System.Drawing.Color.Transparent;
+            this.lbMensaje.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbMensaje.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMensaje.ForeColor = System.Drawing.Color.White;
+            this.lbMensaje.Location = new System.Drawing.Point(503, 68);
+            this.lbMensaje.Name = "lbMensaje";
+            this.lbMensaje.Size = new System.Drawing.Size(0, 39);
+            this.lbMensaje.TabIndex = 3;
+            this.lbMensaje.Click += new System.EventHandler(this.lbInsertarUsuario_Click);
             // 
-            // button1
+            // btContinuar
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(599, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btContinuar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btContinuar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btContinuar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btContinuar.FlatAppearance.BorderSize = 0;
+            this.btContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btContinuar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btContinuar.ForeColor = System.Drawing.Color.Transparent;
+            this.btContinuar.Location = new System.Drawing.Point(583, 252);
+            this.btContinuar.Name = "btContinuar";
+            this.btContinuar.Size = new System.Drawing.Size(150, 40);
+            this.btContinuar.TabIndex = 8;
+            this.btContinuar.Text = "Continuar";
+            this.btContinuar.UseVisualStyleBackColor = false;
+            this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(824, 268);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // UsuarioForm
+            // ExitoErrorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SIDECA.Properties.Resources.fondoPrincipal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btInsertar);
+            this.ClientSize = new System.Drawing.Size(1024, 729);
+            this.Controls.Add(this.btContinuar);
+            this.Controls.Add(this.lbMensaje);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "UsuarioForm";
+            this.Name = "ExitoErrorForm";
             this.Text = "SIDECA";
-            this.Load += new System.EventHandler(this.UsuarioForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,8 +200,8 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.Button btInsertar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbMensaje;
+        private System.Windows.Forms.Button btContinuar;
     }
 }
+

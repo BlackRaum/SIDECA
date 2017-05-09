@@ -26,5 +26,26 @@ namespace SIDECA
         {
 
         }
+
+        private void btInsertar_Click(object sender, EventArgs e)
+        {
+            InsertarUsuarioForm insertar = new InsertarUsuarioForm();
+            insertar.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BuscarUsuarioForm buscar = new BuscarUsuarioForm(1);
+            buscar.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BuscarUsuarioForm buscar = new BuscarUsuarioForm(2);
+            buscar.Show();
+            this.Hide();
+        }
     }
 }

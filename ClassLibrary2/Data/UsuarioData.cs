@@ -34,7 +34,7 @@ namespace Library.Data
                 while (dataReader.Read())
                 {
                     usuario.NombreUsuario = dataReader["usuario"].ToString();
-                    usuario.Contrasena = dataReader["constrasena"].ToString();
+                    usuario.Contrasena = dataReader["contrasena"].ToString();
                 }
                 connection.Close();
                 return usuario;
@@ -48,12 +48,13 @@ namespace Library.Data
                 connection.Close();
             }
         }
-        public LinkedList<Usuario> ObtenerUsuarios()
+        public LinkedList<Usuario> ObtenerUsuarios(string nickName)
         {
             SqlConnection connection = new SqlConnection(stringConexion);
             string sqlProcedureObtenerUsuarios = "sp_obtener_usuarios";
             SqlCommand comandoObtenerUsuarios = new SqlCommand(sqlProcedureObtenerUsuarios, connection);
             comandoObtenerUsuarios.CommandType = System.Data.CommandType.StoredProcedure;
+            comandoObtenerUsuarios.Parameters.Add(new SqlParameter("@usuario", nickName));
             try
             {
                 connection.Open();
@@ -63,7 +64,7 @@ namespace Library.Data
                 {
                     Usuario usuario = new Usuario();
                     usuario.NombreUsuario = dataReader["usuario"].ToString();
-                    usuario.Contrasena = dataReader["constrasena"].ToString();
+                    usuario.Contrasena = dataReader["contrasena"].ToString();
 
                     listaUsuarios.AddLast(usuario);
                 }
@@ -114,7 +115,7 @@ namespace Library.Data
             cmdActualizarUsuario.CommandType = System.Data.CommandType.StoredProcedure;
             //Agregar los demas parametros restantes
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@usuario", usuario.NombreUsuario));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@contrasena", usuario.Contrasena));
+            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@nueva_contrasena", usuario.Contrasena));
             try
             {
                 conexion.Open();
@@ -137,7 +138,7 @@ namespace Library.Data
             SqlCommand cmdEliminarUsuario = new SqlCommand(slqProcedureEliminarUsuario, conexion);
             cmdEliminarUsuario.CommandType = System.Data.CommandType.StoredProcedure;
             //Agregar los demas parametros restantes
-            cmdEliminarUsuario.Parameters.Add(new SqlParameter("@nombreUsuario", nickNameUsuario));
+            cmdEliminarUsuario.Parameters.Add(new SqlParameter("@usuario", nickNameUsuario));
             try
             {
                 conexion.Open();

@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarUsuarioForm.Designer.cs">
+      <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitoErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitoErrorForm.Designer.cs">
+      <DependentUpon>ExitoErrorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +68,12 @@
     </Compile>
     <Compile Include="EditarUsuarioForm.Designer.cs">
       <DependentUpon>EditarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinasForm.Designer.cs">
+      <DependentUpon>OficinasForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +89,12 @@
     <Compile Include="UsuarioForm.Designer.cs">
       <DependentUpon>UsuarioForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuscarUsuarioForm.resx">
+      <DependentUpon>BuscarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitoErrorForm.resx">
+      <DependentUpon>ExitoErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="InsertarUsuarioForm.resx">
       <DependentUpon>InsertarUsuarioForm.cs</DependentUpon>
@@ -106,13 +131,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\botonBorrar.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary2\Library.csproj">
       <Project>{fbeb5f18-23bf-4374-aaf8-b7bd154768dc}</Project>
       <Name>Library</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoPrincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonEditar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonIngresar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoInicio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonBuscar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonContinuar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

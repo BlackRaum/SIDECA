@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class UsuarioForm
+    partial class BuscarUsuarioForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,9 +37,13 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btInsertar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbBuscarUsuario = new System.Windows.Forms.Label();
+            this.lbBuscarUsuario2 = new System.Windows.Forms.Label();
+            this.cbUsuariosNombre = new System.Windows.Forms.ComboBox();
+            this.btBuscar = new System.Windows.Forms.Button();
+            this.tbNombreUsuario = new System.Windows.Forms.TextBox();
+            this.lbNombre = new System.Windows.Forms.Label();
+            this.btContinuar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +94,7 @@
             // 
             // oficinasToolStripMenuItem
             // 
+            this.oficinasToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oficinasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.oficinasToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.oficinasToolStripMenuItem.Name = "oficinasToolStripMenuItem";
@@ -141,75 +146,124 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // btInsertar
+            // lbBuscarUsuario
             // 
-            this.btInsertar.BackColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.FlatAppearance.BorderSize = 0;
-            this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
-            this.btInsertar.Location = new System.Drawing.Point(363, 268);
-            this.btInsertar.Name = "btInsertar";
-            this.btInsertar.Size = new System.Drawing.Size(150, 40);
-            this.btInsertar.TabIndex = 2;
-            this.btInsertar.Text = "Ingresar";
-            this.btInsertar.UseVisualStyleBackColor = false;
-            this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
+            this.lbBuscarUsuario.AutoSize = true;
+            this.lbBuscarUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lbBuscarUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbBuscarUsuario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBuscarUsuario.ForeColor = System.Drawing.Color.White;
+            this.lbBuscarUsuario.Location = new System.Drawing.Point(457, 76);
+            this.lbBuscarUsuario.Name = "lbBuscarUsuario";
+            this.lbBuscarUsuario.Size = new System.Drawing.Size(0, 39);
+            this.lbBuscarUsuario.TabIndex = 3;
             // 
-            // button1
+            // lbBuscarUsuario2
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(599, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lbBuscarUsuario2.AutoSize = true;
+            this.lbBuscarUsuario2.BackColor = System.Drawing.Color.Transparent;
+            this.lbBuscarUsuario2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbBuscarUsuario2.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBuscarUsuario2.ForeColor = System.Drawing.Color.White;
+            this.lbBuscarUsuario2.Location = new System.Drawing.Point(458, 199);
+            this.lbBuscarUsuario2.Name = "lbBuscarUsuario2";
+            this.lbBuscarUsuario2.Size = new System.Drawing.Size(343, 33);
+            this.lbBuscarUsuario2.TabIndex = 4;
+            this.lbBuscarUsuario2.Text = "Ingrese Nombre de Usuario";
             // 
-            // button2
+            // cbUsuariosNombre
             // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(824, 268);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cbUsuariosNombre.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUsuariosNombre.FormattingEnabled = true;
+            this.cbUsuariosNombre.Location = new System.Drawing.Point(490, 303);
+            this.cbUsuariosNombre.Name = "cbUsuariosNombre";
+            this.cbUsuariosNombre.Size = new System.Drawing.Size(272, 37);
+            this.cbUsuariosNombre.TabIndex = 6;
+            this.cbUsuariosNombre.Visible = false;
             // 
-            // UsuarioForm
+            // btBuscar
+            // 
+            this.btBuscar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btBuscar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btBuscar.FlatAppearance.BorderSize = 0;
+            this.btBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBuscar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBuscar.ForeColor = System.Drawing.Color.Transparent;
+            this.btBuscar.Location = new System.Drawing.Point(560, 399);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(150, 40);
+            this.btBuscar.TabIndex = 7;
+            this.btBuscar.Text = "Buscar";
+            this.btBuscar.UseVisualStyleBackColor = false;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
+            // 
+            // tbNombreUsuario
+            // 
+            this.tbNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tbNombreUsuario.Location = new System.Drawing.Point(490, 303);
+            this.tbNombreUsuario.MaxLength = 15;
+            this.tbNombreUsuario.Name = "tbNombreUsuario";
+            this.tbNombreUsuario.Size = new System.Drawing.Size(272, 29);
+            this.tbNombreUsuario.TabIndex = 8;
+            this.tbNombreUsuario.Text = "Nombre de Usuario";
+            this.tbNombreUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lbNombre
+            // 
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbNombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.ForeColor = System.Drawing.Color.Red;
+            this.lbNombre.Location = new System.Drawing.Point(486, 352);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(280, 19);
+            this.lbNombre.TabIndex = 9;
+            this.lbNombre.Text = "*Ingrese un nombre de usuario valido";
+            this.lbNombre.Visible = false;
+            // 
+            // btContinuar
+            // 
+            this.btContinuar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btContinuar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btContinuar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btContinuar.FlatAppearance.BorderSize = 0;
+            this.btContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btContinuar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btContinuar.ForeColor = System.Drawing.Color.Transparent;
+            this.btContinuar.Location = new System.Drawing.Point(560, 410);
+            this.btContinuar.Name = "btContinuar";
+            this.btContinuar.Size = new System.Drawing.Size(150, 40);
+            this.btContinuar.TabIndex = 10;
+            this.btContinuar.UseVisualStyleBackColor = false;
+            this.btContinuar.Visible = false;
+            this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
+            // 
+            // BuscarUsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SIDECA.Properties.Resources.fondoPrincipal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btInsertar);
+            this.Controls.Add(this.btContinuar);
+            this.Controls.Add(this.lbNombre);
+            this.Controls.Add(this.tbNombreUsuario);
+            this.Controls.Add(this.btBuscar);
+            this.Controls.Add(this.cbUsuariosNombre);
+            this.Controls.Add(this.lbBuscarUsuario2);
+            this.Controls.Add(this.lbBuscarUsuario);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "UsuarioForm";
+            this.Name = "BuscarUsuarioForm";
             this.Text = "SIDECA";
-            this.Load += new System.EventHandler(this.UsuarioForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,8 +278,12 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.Button btInsertar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbBuscarUsuario;
+        private System.Windows.Forms.Label lbBuscarUsuario2;
+        private System.Windows.Forms.ComboBox cbUsuariosNombre;
+        private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.TextBox tbNombreUsuario;
+        private System.Windows.Forms.Label lbNombre;
+        private System.Windows.Forms.Button btContinuar;
     }
 }
