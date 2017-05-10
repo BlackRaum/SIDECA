@@ -46,7 +46,7 @@ namespace ClassLibrary2.Business
         {
             try
             {
-                this.EliminarDenuncia(numeroExpediente);
+                this.denunciaData.EliminarDenuncia(numeroExpediente);
             }
             catch (SqlException ex)
             {
@@ -58,7 +58,7 @@ namespace ClassLibrary2.Business
         {
             try
             {
-                return this.ObtenerDenunciasPorNino(cedulaNino);
+                return this.denunciaData.ObtenerDenunciasPorNino(cedulaNino);
             }
             catch (SqlException ex)
             {
@@ -70,7 +70,7 @@ namespace ClassLibrary2.Business
         {
             try
             {
-                return this.ObtenerDenunciaPorExpediente(numeroExpediente);
+                return this.denunciaData.ObtenerDenunciaPorExpediente(numeroExpediente);
             }
             catch (SqlException ex)
             {

@@ -1,6 +1,6 @@
 ﻿namespace SIDECA
 {
-    partial class InsertarUsuarioForm
+    partial class EliminarNinoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertarUsuarioForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarNinoForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.denunciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.casosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,12 +38,11 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btInsertar = new System.Windows.Forms.Button();
-            this.lbInsertarUsuario = new System.Windows.Forms.Label();
-            this.tbNombreUsuario = new System.Windows.Forms.TextBox();
-            this.tbContrasena = new System.Windows.Forms.TextBox();
-            this.lbNombre = new System.Windows.Forms.Label();
-            this.lbContrasena = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnInsertar = new System.Windows.Forms.Button();
+            this.lblErrorCedulaMenor = new System.Windows.Forms.Label();
+            this.tbxCedulaMenor = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,15 +54,23 @@
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.denunciasToolStripMenuItem,
+            this.casosToolStripMenuItem,
+            this.oficinasToolStripMenuItem,
+            this.departamentosToolStripMenuItem,
+            this.profesionalesToolStripMenuItem,
+            this.usuariosToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 10, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(202, 729);
+            this.menuStrip1.Size = new System.Drawing.Size(202, 687);
             this.menuStrip1.Stretch = false;
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.MouseHover += new System.EventHandler(this.menuStrip1_MouseHover);
             // 
             // denunciasToolStripMenuItem
             // 
@@ -136,106 +143,87 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.acercaDeToolStripMenuItem.Text = "Acerca de....";
             // 
-            // btInsertar
+            // label1
             // 
-            this.btInsertar.BackColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.btInsertar.FlatAppearance.BorderSize = 0;
-            this.btInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInsertar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertar.ForeColor = System.Drawing.Color.Transparent;
-            this.btInsertar.Location = new System.Drawing.Point(411, 327);
-            this.btInsertar.Name = "btInsertar";
-            this.btInsertar.Size = new System.Drawing.Size(150, 40);
-            this.btInsertar.TabIndex = 1;
-            this.btInsertar.Text = "Insertar";
-            this.btInsertar.UseVisualStyleBackColor = false;
-            this.btInsertar.Click += new System.EventHandler(this.btInsertar_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(582, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Eliminar Niño";
             // 
-            // lbInsertarUsuario
+            // btnInsertar
             // 
-            this.lbInsertarUsuario.AutoSize = true;
-            this.lbInsertarUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lbInsertarUsuario.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbInsertarUsuario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInsertarUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbInsertarUsuario.Location = new System.Drawing.Point(351, 71);
-            this.lbInsertarUsuario.Name = "lbInsertarUsuario";
-            this.lbInsertarUsuario.Size = new System.Drawing.Size(279, 39);
-            this.lbInsertarUsuario.TabIndex = 2;
-            this.lbInsertarUsuario.Text = "Insertar Usuario";
+            this.btnInsertar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInsertar.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btnInsertar.FlatAppearance.BorderSize = 0;
+            this.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertar.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertar.ForeColor = System.Drawing.Color.White;
+            this.btnInsertar.Location = new System.Drawing.Point(563, 304);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(148, 43);
+            this.btnInsertar.TabIndex = 10;
+            this.btnInsertar.Text = "Eliminar";
+            this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // tbNombreUsuario
+            // lblErrorCedulaMenor
             // 
-            this.tbNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbNombreUsuario.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombreUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbNombreUsuario.Location = new System.Drawing.Point(358, 133);
-            this.tbNombreUsuario.MaxLength = 15;
-            this.tbNombreUsuario.Name = "tbNombreUsuario";
-            this.tbNombreUsuario.Size = new System.Drawing.Size(272, 29);
-            this.tbNombreUsuario.TabIndex = 3;
-            this.tbNombreUsuario.Text = "Nombre de Usuario";
-            this.tbNombreUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblErrorCedulaMenor.AutoSize = true;
+            this.lblErrorCedulaMenor.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorCedulaMenor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCedulaMenor.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCedulaMenor.Location = new System.Drawing.Point(543, 232);
+            this.lblErrorCedulaMenor.Name = "lblErrorCedulaMenor";
+            this.lblErrorCedulaMenor.Size = new System.Drawing.Size(296, 20);
+            this.lblErrorCedulaMenor.TabIndex = 12;
+            this.lblErrorCedulaMenor.Text = "*Debe ingresar el número de cédula del menor.";
+            this.lblErrorCedulaMenor.Visible = false;
             // 
-            // tbContrasena
+            // tbxCedulaMenor
             // 
-            this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbContrasena.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContrasena.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbContrasena.Location = new System.Drawing.Point(358, 197);
-            this.tbContrasena.MaxLength = 12;
-            this.tbContrasena.Name = "tbContrasena";
-            this.tbContrasena.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbContrasena.Size = new System.Drawing.Size(272, 29);
-            this.tbContrasena.TabIndex = 4;
-            this.tbContrasena.Text = "Contraseña";
-            this.tbContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbContrasena.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbContrasena_KeyPress);
+            this.tbxCedulaMenor.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxCedulaMenor.Location = new System.Drawing.Point(546, 185);
+            this.tbxCedulaMenor.Name = "tbxCedulaMenor";
+            this.tbxCedulaMenor.Size = new System.Drawing.Size(200, 30);
+            this.tbxCedulaMenor.TabIndex = 17;
+            this.tbxCedulaMenor.Enter += new System.EventHandler(this.tbxCedulaMenor_Enter);
+            this.tbxCedulaMenor.Leave += new System.EventHandler(this.tbxCedulaMenor_Leave);
             // 
-            // lbNombre
+            // lblBuscar
             // 
-            this.lbNombre.AutoSize = true;
-            this.lbNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lbNombre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombre.ForeColor = System.Drawing.Color.Red;
-            this.lbNombre.Location = new System.Drawing.Point(649, 133);
-            this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(280, 19);
-            this.lbNombre.TabIndex = 5;
-            this.lbNombre.Text = "*Ingrese un nombre de usuario valido";
-            this.lbNombre.Visible = false;
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscar.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.Color.White;
+            this.lblBuscar.Location = new System.Drawing.Point(598, 96);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(84, 29);
+            this.lblBuscar.TabIndex = 18;
+            this.lblBuscar.Text = "Buscar";
             // 
-            // lbContrasena
-            // 
-            this.lbContrasena.AutoSize = true;
-            this.lbContrasena.BackColor = System.Drawing.Color.Transparent;
-            this.lbContrasena.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContrasena.ForeColor = System.Drawing.Color.Red;
-            this.lbContrasena.Location = new System.Drawing.Point(649, 197);
-            this.lbContrasena.Name = "lbContrasena";
-            this.lbContrasena.Size = new System.Drawing.Size(308, 19);
-            this.lbContrasena.TabIndex = 6;
-            this.lbContrasena.Text = "*Ingrese una contraseña de usuario valida";
-            this.lbContrasena.Visible = false;
-            // 
-            // InsertarUsuarioForm
+            // EliminarNinoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.lbContrasena);
-            this.Controls.Add(this.lbNombre);
-            this.Controls.Add(this.tbContrasena);
-            this.Controls.Add(this.tbNombreUsuario);
-            this.Controls.Add(this.lbInsertarUsuario);
-            this.Controls.Add(this.btInsertar);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1008, 687);
+            this.Controls.Add(this.lblBuscar);
+            this.Controls.Add(this.tbxCedulaMenor);
+            this.Controls.Add(this.lblErrorCedulaMenor);
+            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "InsertarUsuarioForm";
-            this.Text = "SIDECA";
-            this.Load += new System.EventHandler(this.InsertarUsuarioForm_Load);
+            this.MaximumSize = new System.Drawing.Size(1024, 768);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
+            this.Name = "EliminarNinoForm";
+            this.Text = "Eliminar Niño";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -254,11 +242,10 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.Button btInsertar;
-        private System.Windows.Forms.Label lbInsertarUsuario;
-        private System.Windows.Forms.TextBox tbNombreUsuario;
-        private System.Windows.Forms.TextBox tbContrasena;
-        private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.Label lbContrasena;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.Label lblErrorCedulaMenor;
+        private System.Windows.Forms.TextBox tbxCedulaMenor;
+        private System.Windows.Forms.Label lblBuscar;
     }
 }

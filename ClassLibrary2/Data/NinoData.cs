@@ -27,13 +27,13 @@ namespace ClassLibrary2.Data
             cmdInsertarNino.CommandType = System.Data.CommandType.StoredProcedure;
 
             //Agregar los demas parametros restantes
-            cmdInsertarNino.Parameters.Add(new SqlParameter("@sexo", nino.CedulaNino));
-            cmdInsertarNino.Parameters.Add(new SqlParameter("@edad", nino.NombreNino));
+            cmdInsertarNino.Parameters.Add(new SqlParameter("@cedula_nino", nino.CedulaNino));
+            cmdInsertarNino.Parameters.Add(new SqlParameter("@nombre_nino", nino.NombreNino));
             cmdInsertarNino.Parameters.Add(new SqlParameter("@sexo", nino.Sexo));
             cmdInsertarNino.Parameters.Add(new SqlParameter("@edad", nino.Edad));
             cmdInsertarNino.Parameters.Add(new SqlParameter("@fecha_nacimiento", nino.FechaNacimiento));
-            cmdInsertarNino.Parameters.Add(new SqlParameter("@nombre_encargado", nino.CedulaEncargado));
-            cmdInsertarNino.Parameters.Add(new SqlParameter("@cedula_encargado", nino.NombreEncargado));
+            cmdInsertarNino.Parameters.Add(new SqlParameter("@cedula_encargado", nino.CedulaEncargado));
+            cmdInsertarNino.Parameters.Add(new SqlParameter("@nombre_encargado", nino.NombreEncargado));
 
             conexion.Open();
 
@@ -61,6 +61,8 @@ namespace ClassLibrary2.Data
             cmdActualizarNino.CommandType = System.Data.CommandType.StoredProcedure;
 
             //Agregar los demas parametros restantes
+            cmdActualizarNino.Parameters.Add(new SqlParameter("@cedula_nino", nino.CedulaNino));
+            cmdActualizarNino.Parameters.Add(new SqlParameter("@nombre_nino", nino.NombreNino));
             cmdActualizarNino.Parameters.Add(new SqlParameter("@sexo", nino.Sexo));
             cmdActualizarNino.Parameters.Add(new SqlParameter("@edad", nino.Edad));
             cmdActualizarNino.Parameters.Add(new SqlParameter("@fecha_nacimiento", nino.FechaNacimiento));
@@ -82,7 +84,7 @@ namespace ClassLibrary2.Data
             }
         }
 
-        public void EliminarNino(string numeroCedula)
+        public void EliminarNino(int numeroCedula)
         {
             SqlConnection conexion = new SqlConnection(stringConexion);
 
@@ -90,7 +92,7 @@ namespace ClassLibrary2.Data
             string slqProcedureEliminarNino = "sp_eliminar_nino";
             SqlCommand cmdEliminarNino = new SqlCommand(slqProcedureEliminarNino, conexion);
             cmdEliminarNino.CommandType = System.Data.CommandType.StoredProcedure;
-            cmdEliminarNino.Parameters.Add(new SqlParameter("@numero_expediente", numeroCedula));
+            cmdEliminarNino.Parameters.Add(new SqlParameter("@cedula_nino", numeroCedula));
 
             try
             {

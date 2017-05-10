@@ -25,7 +25,7 @@ namespace Library.Data
             cmdInsertarDenuncia.CommandType = System.Data.CommandType.StoredProcedure;
 
             //Agregar los demas parametros restantes
-            cmdInsertarDenuncia.Parameters.Add(new SqlParameter("@numero_expediente", denuncia.TipoDenuncia));
+            cmdInsertarDenuncia.Parameters.Add(new SqlParameter("@numero_expediente", denuncia.NumeroExpediente));
             cmdInsertarDenuncia.Parameters.Add(new SqlParameter("@tipo_denuncia", denuncia.TipoDenuncia));
             cmdInsertarDenuncia.Parameters.Add(new SqlParameter("@fecha_ingreso", denuncia.FechaIngreso));
 
@@ -74,6 +74,7 @@ namespace Library.Data
             cmdActualizarDenuncia.CommandType = System.Data.CommandType.StoredProcedure;
 
             //Agregar los demas parametros restantes
+            cmdActualizarDenuncia.Parameters.Add(new SqlParameter("@numero_expediente", denuncia.NumeroExpediente));
             cmdActualizarDenuncia.Parameters.Add(new SqlParameter("@tipo_denuncia", denuncia.TipoDenuncia));
             cmdActualizarDenuncia.Parameters.Add(new SqlParameter("@fecha_ingreso", denuncia.FechaIngreso));
 
@@ -113,6 +114,9 @@ namespace Library.Data
 
             try
             {
+                cmdEliminarDenuncia.Transaction = transaccion;
+                cmdEliminarDenunciaNino.Transaction = transaccion;
+
                 cmdEliminarDenunciaNino.ExecuteNonQuery();
                 cmdEliminarDenuncia.ExecuteNonQuery();
                 transaccion.Commit();
@@ -148,7 +152,7 @@ namespace Library.Data
                     denuncia.NumeroExpediente = dataReader["numero_expediente"].ToString();
                     denuncia.TipoDenuncia = dataReader["tipo_denuncia"].ToString();
                     denuncia.FechaIngreso = DateTime.Parse(dataReader["fecha_ingreso"].ToString());
-
+                    denuncia.Nino.CedulaNino = Int32.Parse(dataReader["cedula_nino"].ToString());
                     listaDenuncias.AddLast(denuncia);
                 }
                 connection.Close();
@@ -183,6 +187,7 @@ namespace Library.Data
                     denuncia.NumeroExpediente = dataReader["numero_expediente"].ToString();
                     denuncia.TipoDenuncia = dataReader["tipo_denuncia"].ToString();
                     denuncia.FechaIngreso = DateTime.Parse(dataReader["fecha_ingreso"].ToString());
+                    denuncia.Nino.CedulaNino = Int32.Parse(dataReader["cedula_nino"].ToString());
                 }
                 connection.Close();
                 return denuncia;

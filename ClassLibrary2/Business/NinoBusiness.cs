@@ -34,7 +34,7 @@ namespace ClassLibrary2.Business
         {
             try
             {
-                this.ActualizarNino(nino);
+                this.ninoData.ActualizarNino(nino);
             }
             catch (SqlException ex)
             {
@@ -42,7 +42,7 @@ namespace ClassLibrary2.Business
             }
         }
 
-        public void EliminarNino(string numeroCedula)
+        public void EliminarNino(int numeroCedula)
         {
             try
             {

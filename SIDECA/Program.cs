@@ -16,7 +16,7 @@ namespace SIDECA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DepartamentosForm());
+            Application.Run(new EliminarDenunciaForm());
         }
     }
 }

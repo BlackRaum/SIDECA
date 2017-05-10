@@ -1,6 +1,4 @@
-﻿using ClassLibrary2.Business;
-using ClassLibrary2.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,24 +12,9 @@ namespace SIDECA
 {
     public partial class EditarUsuarioForm : Form
     {
-        private UsuarioBusiness usuarioBusiness;
-        private string nickName;
-        private Usuario usuario;
-        public EditarUsuarioForm(string nickName)
+        public EditarUsuarioForm()
         {
             InitializeComponent();
-            this.nickName = nickName;
-            usuarioBusiness = new UsuarioBusiness("Data Source=163.178.173.148;Initial Catalog=SidecaBD;User ID=lenguajes;Password=lenguajes");
-            inicioComponentes();
-
-
-        }
-        private void inicioComponentes()
-        {
-            usuario = usuarioBusiness.ObtenerUsuario(nickName);
-
-            tbNombreUsuario.Text = usuario.NombreUsuario;
-            tbContrasena.Text = usuario.Contrasena;
         }
 
         private void menuStrip1_MouseHover(object sender, EventArgs e)
@@ -39,20 +22,9 @@ namespace SIDECA
 
         }
 
-        private void btContinuar_Click(object sender, EventArgs e)
+        private void EditarUsuarioForm_Load(object sender, EventArgs e)
         {
 
-          
-            if (tbContrasena.Text != null)
-            {
-                usuario.Contrasena = tbContrasena.Text;
-                usuarioBusiness.InsertarUsuario(usuario);
-            }
-            else
-            {
-                lbContrasena.Visible = true;
-            }                        
-            
         }
     }
 }
