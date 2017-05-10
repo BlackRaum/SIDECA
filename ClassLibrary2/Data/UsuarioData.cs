@@ -12,9 +12,9 @@ namespace Library.Data
         private string stringConexion;
 
 
-        public UsuarioData(string stringConexion)
+        public UsuarioData(string stringConexion1)
         {
-            this.stringConexion = stringConexion;
+            this.stringConexion = stringConexion1;
 
         }
 
